@@ -1,13 +1,10 @@
-package com.HotelReservation;
+package com.hotelreservation;
 
 public class Hotel {
-	private int regularCustRate;
 	private String hotelName;
+	private int regularCustRate;
+	private long totalRate;
 
-	/**
-	 * @param hotelName
-	 * @param regularCustRate
-	 */
 	public Hotel(String hotelName, int regularCustRate) {
 		this.hotelName = hotelName;
 		this.regularCustRate = regularCustRate;
@@ -28,5 +25,12 @@ public class Hotel {
 	public void setRegularCustRate(int regularCustRate) {
 		this.regularCustRate = regularCustRate;
 	}
-}
 
+	public long getTotalRate() {
+		return totalRate;
+	}
+
+	public void setTotalRate(long totalRate) {
+		this.totalRate = totalRate;
+	}
+}
